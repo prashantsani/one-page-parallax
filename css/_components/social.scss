@@ -1,0 +1,119 @@
+.social{
+    letter-spacing: 0;
+    li{
+        display: inline-block;
+        margin-right: 1em;
+        position: relative;
+        a{
+            background: transparent;
+            display: inline-block;
+            width:25px;
+            height: 25px;
+            position: relative;
+
+            &:before,
+            &:after{
+                content: '';
+                display: inline-block;
+                @include transition(all 0.3s ease-in-out);
+                @extend .background-contain;
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background-position: center center;
+            }
+            &:before{
+                opacity: 0;
+            }
+            &:before{
+                opacity: 1;
+            }
+        }
+        span{
+            font-size: 0;
+        }
+        &:last-child{
+            margin-right:0
+        }
+    }
+    &.small{
+        li{
+            a{
+                width:16px;
+                height: 16px;
+            }
+        }
+    }
+    html &-fb,
+    html &-fb-white,
+    html &-fb-grey,
+    html &-v,
+    html &-v-white,
+    html &-v-grey,
+    html &-i,
+    html &-i-white,
+    html &-i-grey{
+        a:hover:after{
+            opacity: 0;
+        }
+        a:hover:before{
+            opacity: 1;
+        }
+    }
+    html &-fb,
+    html &-fb-white,
+    html &-fb-grey{
+        a:before{
+            background-image: url(/images/social/fb-logo-pink.svg);
+        }
+    }
+    html &-v,
+    html &-v-white,
+    html &-v-grey{
+        a:before{
+            background-image: url(/images/social/vimeo-logo-pink.svg);
+        }
+    }
+    html &-i,
+    html &-i-white,
+    html &-i-grey{
+        a:before{
+            background-image: url(/images/social/insta-logo-pink.svg);
+        }
+    }
+    &-fb,
+    &-fb-white{
+        a:after{
+            background-image: url(/images/social/fb-logo.svg);
+        }
+    }
+    &-v,
+    &-v-white{
+        a:after{
+            background-image: url(/images/social/vimeo-logo.svg);
+        }
+    }
+    &-i,
+    &-i-white{
+        a:after{
+            background-image: url(/images/social/insta-logo.svg);
+        }
+    }
+    &-fb-grey{
+        a:after{
+            background-image: url(/images/social/fb-logo-grey.svg);
+        }
+    }
+    &-v-grey{
+        a:after{
+            background-image: url(/images/social/vimeo-logo-grey.svg);
+        }
+    }
+    &-i-grey{
+        a:after{
+            background-image: url(/images/social/insta-logo-grey.svg);
+        }
+    }
+}
