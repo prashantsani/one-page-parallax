@@ -14,7 +14,7 @@ a:link,a:visited{
 .current-link {
   cursor: default;
 }
-button, button:hover {
+button{
   outline: none;
   border: none;
   background: transparent
@@ -22,4 +22,12 @@ button, button:hover {
 .boxed{
   font-size: 20px;
   color: $red-text;
+  border: solid 2px #ee4023;
+  line-height: 36px;
+  display: block;
+  margin: 20px 0 0 0;
+  min-width: 200px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: left
 }

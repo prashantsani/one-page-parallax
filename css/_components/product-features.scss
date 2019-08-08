@@ -1,5 +1,4 @@
 .product-features{
-    padding: 0 60px;
     .heading,
     .subheading{
         font-weight: 300;
@@ -27,18 +26,40 @@
 .product-features-customise,
 .product-features-crop{
     display: flex;
+    figure{
+        position: relative;
+        overflow: hidden;
+    }
     .description{
-
+        padding-left: 60px;
+    }
+}
+.product-features-customise{
+    .description{
+        max-width: 420px;
+        order: 2;
     }
     figure{
-        
+        order: 1;
+    }
+    &.flipped{
+        .description{
+            order: 1;
+        }
+        figure{
+            order: 2;
+        }
     }
 }
 .product-features-crop{
-    figure{
-        position: relative;
+    justify-content: space-between;
+    .description{
+        max-width: 500px;
     }
     .family-2{
         position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
     }
 }
