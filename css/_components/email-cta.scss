@@ -45,12 +45,12 @@
   }
 
   input[type=submit]{
-    background: $red-button;
+    background: $red;
     color: $white;
     text-transform: uppercase;
     font-size: $u14;
     .no-touchevents &:hover{
-      color:$red-button;
+      color:$red;
       background: $white;
     }
   }
