@@ -3,10 +3,10 @@
   height: 500px;
   background: url(../images/hero.jpg) top center no-repeat;
   box-sizing: border-box;
-  padding: 52px 0 0 60px;
+  padding: $u48 0 0 $u60;
 
   h1{
-    font-size: 42px;
+    font-size: $u42;
     color: $white;
     width: 10em;
   }

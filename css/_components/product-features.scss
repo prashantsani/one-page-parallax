@@ -5,19 +5,19 @@
         opacity: 0.96;
     }
     .heading{
-        font-size: 48px
+        font-size: $u48;
     }
     .subheading{
-        font-size: 24px;
+        font-size: $u24;
     }
     article{
         margin: 70px 0;
         h1{
-            font-size: 24px;
+            font-size: $u24;
             font-weight: 400;
         }
         p{
-            font-size: 18px;
+            font-size: $u18;
             font-weight: 300;
         }
     }
@@ -31,7 +31,7 @@
         overflow: hidden;
     }
     .description{
-        padding-left: 60px;
+        padding-left: $u60;
     }
 }
 .product-features-customise{
@@ -49,7 +49,7 @@
     &.flipped{
         .description{
             order: 1;
-            padding-right: 60px;
+            padding-right: $u60;
         }
         figure{
             order: 2;
