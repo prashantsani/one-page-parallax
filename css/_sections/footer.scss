@@ -1,19 +1,34 @@
 .footer{
 	position: relative;
+	background: url(../images/geometric-band.jpg) center center no-repeat;
+	padding: 46px 24px;
 	
-}
-.copyright{
-
-}
-
-.index-sections-wrap + .footer{
-
-}
-
-@media screen and (max-width:100px){
-
-}
-
-@media screen and (max-width:600px){
-
+	ul{
+		font-size: 16px;
+		line-height: 1;
+		font-weight: 300;
+		color: white;
+		li{
+			display: inline-block;
+			&:after{
+				content: '|';
+				display: inline-block;
+				vertical-align: middle;
+				line-height: 1;
+				font-size: inherit;
+			}
+			&:last-child:after{
+				display: none;
+			}
+		}
+		a{
+			color: #ffffff;
+			display: inline-block;
+			padding: 0 5px;
+			vertical-align: middle;
+		}
+		.no-touchevents & a:hover{
+			text-shadow: 0 0 1px white;
+		} 
+	}
 }
