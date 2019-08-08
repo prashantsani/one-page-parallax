@@ -53,6 +53,9 @@
 	// Primary Colors
 	$grey-text: #0f0f0f;
 	$red-text: #ee4023;
+	$red-button: #ee4023;
+	$white: #ffffff;
+	$black: #000000;
 
 	// Secondary Colors
 
@@ -159,14 +162,13 @@
 	------------ */
 		@import './_components/hero.scss';
 		@import './_components/product-features.scss';
+		@import './_components/email-cta.scss';
 
 	/* ------------
 		Pages
 	------------ */
 		@import '_pages/common.scss';
 		@import '_pages/index.scss';
-		@import '_pages/about.scss';
-		@import '_pages/contact.scss';
 
 /* =============================================================================
 	6. Footer

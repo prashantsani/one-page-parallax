@@ -1,0 +1,57 @@
+.email-cta{
+  height: 746px;
+  background: url(../images/closing-photo.jpg) bottom center no-repeat;
+  position: relative;
+}
+.email-cta-form{
+  background: rgba($black,0.64);
+  width: 658px;
+  max-width: 80%;
+  position: absolute;
+  z-index: 2;
+  box-sizing: border-box;
+  color: $white;
+  bottom: 30%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  padding: 40px;
+  
+  h1{
+    font-size: 36px;
+  }
+  h2{
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-weight: 300;
+  }
+  
+  input{
+    display: inline-block;
+    vertical-align: middle;
+    height: 34px;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  input[type=email]{
+    width: 226px;
+    font-size: 13px;
+  }
+
+  input[type=submit]{
+    background: $red-button;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 14px;
+    .no-touchevents &:hover{
+      color:$red-button;
+      background: $white;
+    }
+  }
+
+}

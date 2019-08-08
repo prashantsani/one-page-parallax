@@ -7,7 +7,7 @@
 		font-size: 16px;
 		line-height: 1;
 		font-weight: 300;
-		color: white;
+		color: $white;
 		li{
 			display: inline-block;
 			&:after{
@@ -28,7 +28,7 @@
 			vertical-align: middle;
 		}
 		.no-touchevents & a:hover{
-			text-shadow: 0 0 1px white;
+			text-shadow: 0 0 1px $white;
 		} 
 	}
 }
