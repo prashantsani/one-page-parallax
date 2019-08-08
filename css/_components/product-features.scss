@@ -35,6 +35,10 @@
     }
 }
 .product-features-customise{
+    .description,
+    figure{
+        @include transition(all 0.3s ease-in-out);
+    }
     .description{
         max-width: 420px;
         order: 2;
@@ -45,6 +49,7 @@
     &.flipped{
         .description{
             order: 1;
+            padding-right: 60px;
         }
         figure{
             order: 2;

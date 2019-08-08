@@ -37,8 +37,7 @@ Modernizr.on('webp', function(result) {
 
 	var changeImage = _$('.change-image'),
 			flipSection = _$('.flip-section'),
-			customise = _$('.product-features-customise'),
-			crop = _$('.product-features-crop');
+			customise = _$('.product-features-customise');
 
 
 	changeImage[0].addEventListener('click', function(){
@@ -50,7 +49,7 @@ Modernizr.on('webp', function(result) {
 	});
 
 	flipSection[0].addEventListener('click', function(){
-		
+		customise[0].classList.toggle('flipped');		
 	});
 
 
