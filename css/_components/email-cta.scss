@@ -36,6 +36,7 @@
     outline: none;
     padding: 0 20px;
     box-sizing: border-box;
+    @include transition(all 0.3s ease-in-out);
   }
 
   input[type=email]{

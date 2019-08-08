@@ -56,10 +56,17 @@
     .description{
         max-width: 500px;
     }
+    .family-2,
+    .family-1{
+        @include transition(all 0.3s ease-in-out);
+    }
     .family-2{
         position: absolute;
         left: 0;
         top: 0;
         z-index: -1;
+    }
+    [aria-hidden="true"]{
+        opacity: 0;
     }
 }

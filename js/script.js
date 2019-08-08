@@ -6,30 +6,6 @@
 	https://prashantsani.com
 
 */
-Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
-	get: function(){
-		return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
-	}
-});
-function whichAnimationEvent(){
-	var t,
-		el = document.createElement("fakeelement");
-
-	var animations = {
-		"animation"      : "animationend",
-		"OAnimation"     : "oAnimationEnd",
-		"MozAnimation"   : "animationend",
-		"WebkitAnimation": "webkitAnimationEnd"
-	}
-
-	for (t in animations){
-		if (el.style[t] !== undefined){
-		return animations[t];
-		}
-	}
-}
-var animationEvent = whichAnimationEvent();
-
 
 /* ------------
 	Feature Detection
@@ -55,15 +31,29 @@ Modernizr.on('webp', function(result) {
 
 
 (function(w,d){
-	var $html = $('html');
+	function _$(element){
+		return d.querySelectorAll(element);
+	}
 
-	$(d).on('load',function () {
+	var changeImage = _$('.change-image'),
+			flipSection = _$('.flip-section'),
+			customise = _$('.product-features-customise'),
+			crop = _$('.product-features-crop');
 
+
+	changeImage[0].addEventListener('click', function(){
+		var value_1 = _$('.family-1')[0].getAttribute('aria-hidden')==='false' ? 'true' : 'false' ;
+				value_2 = value_1 === 'true' ? 'false' : 'true';
+
+		_$('.family-1')[0].setAttribute('aria-hidden',value_1);
+		_$('.family-2')[0].setAttribute('aria-hidden',value_2);
 	});
 
-	$(w).on('resize',function () {
-
+	flipSection[0].addEventListener('click', function(){
+		
 	});
+
+
 
 	/* ------------
 		Form Submit
