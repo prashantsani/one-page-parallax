@@ -44,7 +44,7 @@
     }
     .description{
         max-width: 420px;
-        width: 40%;
+        width: 50%;
         order: 2;
     }
     figure{
@@ -85,7 +85,7 @@
     }
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:768px){
     .product-features-customise,
     .product-features-crop{
         .description{

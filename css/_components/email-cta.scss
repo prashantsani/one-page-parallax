@@ -6,7 +6,7 @@
 .email-cta-form{
   background: rgba($black,0.64);
   width: 658px;
-  max-width: 80%;
+  max-width: 90%;
   position: absolute;
   z-index: 2;
   box-sizing: border-box;
@@ -55,4 +55,17 @@
     }
   }
 
+}
+
+@media screen and (max-width:768px){
+  .email-cta-form{
+    padding: 40px 20px;
+  }
+}
+
+@media screen and (max-width:600px){
+  .email-cta-form input[type=email]{
+    display: block;
+    margin: 0 auto 10px;
+  }
 }
