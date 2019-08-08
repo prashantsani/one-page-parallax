@@ -3,6 +3,8 @@
     .subheading{
         font-weight: 300;
         opacity: 0.96;
+        max-width: 85%;
+        margin: 0 auto;
     }
     .heading{
         font-size: $u48;
@@ -31,7 +33,8 @@
         overflow: hidden;
     }
     .description{
-        padding-left: $u60;
+        padding: 0 0 $u60 $u60;
+        box-sizing: border-box;
     }
 }
 .product-features-customise{
@@ -41,10 +44,12 @@
     }
     .description{
         max-width: 420px;
+        width: 40%;
         order: 2;
     }
     figure{
         order: 1;
+        max-width: 45%
     }
     &.flipped{
         .description{
@@ -59,7 +64,11 @@
 .product-features-crop{
     justify-content: space-between;
     .description{
+        width: 45%;
         max-width: 500px;
+    }
+    figure{
+        max-width: 50%;
     }
     .family-2,
     .family-1{
@@ -73,5 +82,29 @@
     }
     [aria-hidden="true"]{
         opacity: 0;
+    }
+}
+
+@media screen and (max-width:600px){
+    .product-features-customise,
+    .product-features-crop{
+        .description{
+            padding: 0 0 $u48 $u48;
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+    .product-features-customise,
+    .product-features-crop{
+        flex-wrap: wrap;
+        .description{
+            padding: 0 $u48 $u48 $u48;
+        }
+        .description,
+        figure{
+            width: 100%;
+            max-width: 100%; 
+        }
     }
 }
