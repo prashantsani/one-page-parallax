@@ -6,3 +6,6 @@
 4. Social Sharing Meta Tags
 5. Animation on Click of `flip` and `change` buttons 
 6. Will Add animation in next phase. 
+
+
+You can visit the live link at https://prashantsani.github.io/one-page-parallax/
